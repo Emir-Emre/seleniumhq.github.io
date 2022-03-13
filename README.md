@@ -2,21 +2,21 @@
 
 <a href="https://selenium.dev"><img src="https://selenium.dev/images/selenium_logo_square_green.png" width="200" alt="Selenium"/></a>
 
-# Selenium Sites ve Dökümantasyonu
+# Selenium Sitesi ve Dökümantasyonu
 
-This is the repository used to build and publish the official Selenium [website](https://selenium.dev).
+Bu, resmi Selenium [web sitesini](https://selenium.dev) oluşturmak ve yayınlamak için kullanılan depodur.
 
-## Quick start
+## Hızlı başlangıç
 
-We use [Hugo](https://gohugo.io/) and the [Docsy theme](https://www.docsy.dev/)
-to build and render the site. You will need the “extended” 
+Siteyi oluşturmak ve işlemek için [Hugo](https://gohugo.io/) ve [Docsy theme](https://www.docsy.dev/)
+kullanıyoruz. You will need the “extended” 
 Sass/SCSS version of the Hugo binary to work on this site. We recommend
 to use Hugo 0.83.1 or higher.
 
-Steps needed to have this working locally and work on it:
+Bunun yerel olarak çalışması ve üzerinde çalışması için gereken adımlar:
 
 - Follow the [Install Hugo](https://www.docsy.dev/docs/getting-started/#install-hugo) instructions from Docsy
-- Clone this repository
+- Bu depoyu klonla
 - Run `git submodule update --init --recursive`
 - Run `cd website_and_docs`
 - Run `hugo server`
