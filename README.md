@@ -9,26 +9,23 @@ Bu, resmi Selenium [web sitesini](https://selenium.dev) oluşturmak ve yayınlam
 ## Hızlı başlangıç
 
 Siteyi oluşturmak ve işlemek için [Hugo](https://gohugo.io/) ve [Docsy theme](https://www.docsy.dev/)
-kullanıyoruz. You will need the “extended” 
-Sass/SCSS version of the Hugo binary to work on this site. We recommend
-to use Hugo 0.83.1 or higher.
+kullanıyoruz. Bu sitede çalışmak için  Hugo ikilisinin genişletilmiş Sass/SCSS versiyonuna ihtiyacınız olacak. Hugo 0.83.1 veya üstünü kullanmanızı öneririz.
 
 Bunun yerel olarak çalışması ve üzerinde çalışması için gereken adımlar:
 
-- Follow the [Install Hugo](https://www.docsy.dev/docs/getting-started/#install-hugo) instructions from Docsy
+- Docsy`den [Hugo Yükleme](https://www.docsy.dev/docs/getting-started/#install-hugo) talimatlarını izleyin
 - Bu depoyu klonla
-- Run `git submodule update --init --recursive`
-- Run `cd website_and_docs`
-- Run `hugo server`
+- Çalıştır `git submodule update --init --recursive`
+- Çalıştır `cd website_and_docs`
+- Çalıştır `hugo server`
 
-A full contribution guideline can be seen at [contributing](https://selenium.dev/documentation/about/contributing/)
+Tam bir katkı klavuzu [contributing](https://selenium.dev/documentation/about/contributing/) de görülebilir.
 
-## How to get involved?
+## Nasıl katılırım?
 
-Please check all the information available at https://selenium.dev/getinvolved/
+Lütfen https://selenium.dev/getinvolved/ adresinde bulunan tüm bilgileri kontrol edin.
 
-## For Selenium Site and Documentation maintainers
-
+## Selenyum Site ve Dokümantasyon sorumluları için
 ### How does the site and docs get build?
 
 GitHub actions runs for every commit on each PR and protected branch. The regular CI execution will
