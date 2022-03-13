@@ -26,20 +26,18 @@ Tam bir katkı klavuzu [contributing](https://selenium.dev/documentation/about/c
 Lütfen https://selenium.dev/getinvolved/ adresinde bulunan tüm bilgileri kontrol edin.
 
 ## Selenyum Site ve Dokümantasyon sorumluları için
-### How does the site and docs get build?
+### Site ve dokümanlar nasıl oluşturulur?
 
-GitHub actions runs for every commit on each PR and protected branch. The regular CI execution will
-build the site with Hugo to verify that the commit works. The description of these steps can be seen
-at the actions configuration file, [one for testing a PR](./.github/workflows/test.yml), and 
-[one for deploying the site](./.github/workflows/deploy.yml)
+GitHub eylemleri, her bir PR ve korumalı daldaki her commit için çalışır. Düzenli CI yürütme,
+commit`in çalıştığını doğrulamak için siteyi Hugo ile birlikte oluşturacaktır. Bu adımların açıklaması eylemler yapılandırma dosyasında görülebilir, [biri PR test etmek için](./.github/workflows/test.yml), ve 
+[biri siteyi dağıtmak için](./.github/workflows/deploy.yml)
 
-### How are the site and docs deployed?
+### Site ve dokümanlar nasıl dağıtılır?
+`dev` dalında gerçekleşen her CI yürütmesinden sonra, komut [build-site.sh](./build-site.sh) 
+dağıtım için yürütülür. Bu komut dosyası commit mesajındaki `[deploy site]`dizesini kontrol eder.
 
-After each CI execution that happens in the `dev` branch, the script [build-site.sh](./build-site.sh) 
-is executed for deployment. This script checks for the string `[deploy site]` in the commit message.
-
-If the commit message contains that string, and the commit is in `dev`, a 
-[GitHub action](./.github/workflows/deploy.yml) is triggered to build and deploy the site. 
+Commit mesajı bu dizeyi içeriyorsa ve commit `dev` içindeyse, siteyi oluşturmak ve dağıtmak için bir 
+[GitHub eylemi](./.github/workflows/deploy.yml) tetiklenir. 
 The site and docs will be built, and the changes will be committed to the branch `publish` 
 by the user [Selenium-CI](https://github.com/selenium-ci/).
 
