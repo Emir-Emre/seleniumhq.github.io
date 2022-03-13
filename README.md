@@ -38,23 +38,18 @@ dağıtım için yürütülür. Bu komut dosyası commit mesajındaki `[deploy s
 
 Commit mesajı bu dizeyi içeriyorsa ve commit `dev` içindeyse, siteyi oluşturmak ve dağıtmak için bir 
 [GitHub eylemi](./.github/workflows/deploy.yml) tetiklenir. 
-The site and docs will be built, and the changes will be committed to the branch `publish` 
-by the user [Selenium-CI](https://github.com/selenium-ci/).
+Site ve dokümanlar oluşturulacak ve değişiklikler,  [Selenium-CI](https://github.com/selenium-ci/) kullanıcısı tarafından `publish` şubeye commit edilecek.
 
-*What is important to take into account is that the source files for the site are in the `dev`
-branch, and the files that get deployed are pushed to the `publish` branch.*
+*Dikkate alınması gereken önemli nokta sitenin kaynak dosyalarının `dev` dizininde olmasıdır ve dağıtılan dosyalar `publish`şubesine gönderilir.*
 
-The site is deployed using GitHub pages, and the configuration for this can be seen at the
-repo [settings](https://github.com/SeleniumHQ/seleniumhq.github.io/settings) (if you are a maintainer
-you should be able to access the link).
+Site GitHub sayfaları kullanılarak dağıtılır ve bunun yapılandırması repo [ayarlarında](https://github.com/SeleniumHQ/seleniumhq.github.io/settings) görülebilir (eğer bir maintainer`san bağlantıya erişebilmelisin).
 
-The selenium.dev domain is managed at https://www.gandi.net/en, if you need access to it, reach out to
-any of the [PLC](https://www.selenium.dev/structure/#plc) or [TLC](https://www.selenium.dev/structure/#tlc)
-members, who can help you with that.
+Selenium.dev etki alanı https://www.gandi.net/en adresinde yönetilir,eğer erişme ihtiyacınız varsa  size bu konuda yardımcı olabilecek 
+[PLC](https://www.selenium.dev/structure/#plc) veya [TLC](https://www.selenium.dev/structure/#tlc) üyelerinden herhangi birine ulaşın.
 
-If for any reason, you need to setup the domain redirection again,
-we followed this [guide](http://spector.io/how-to-set-up-github-pages-with-a-custom-domain-on-gandi/),
-but any tutorial/guide showing how to redirect a domain to GitHub pages should do.   
+
+Herhangi bir nedenle alan yönlendirmesini yeniden ayarlamanız gerekirse, bu  [klavuzu](http://spector.io/how-to-set-up-github-pages-with-a-custom-domain-on-gandi/) izledik
+ancak bir etki alanının GitHub sayfalarına nasıl yönlendirileceğini gösteren herhangi bir öğretici/kılavuz yapılmalıdır.   
  
 
 
